@@ -61,7 +61,6 @@ void displayFunc() {
     glPushMatrix();
     glRotatef(rotAng, 0.0, 0.0, 1.0);
 
-    // Configuração de material
     GLfloat matAmbient[] = {0.5, 0.5, 0.5, 1.0};
     GLfloat matDiffuse[] = {0.8, 0.8, 0.8, 1.0};
     GLfloat matSpecular[] = {1.0, 1.0, 1.0, 1.0};
@@ -117,7 +116,6 @@ void update(int value) {
 
 void MouseInt(int botao, int estado, int x, int y) {
     if (estado == GLUT_DOWN) {
-        // Mover a luz para a posição do clique
         luzx = coordx(x);
         luzy = coordy(y);
         posLuz[0] = luzx;
